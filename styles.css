@@ -16,15 +16,30 @@ body{
     width: 100vw;
 }
 
+.container{
+    display: flex;
+    width: 50%;
+    flex-direction: column;
+    justify-content: space-around;
+
+
+}
+
+#shopping{
+    align-self: flex-end;
+}
+
 #navbar{
     align-self: center;
     position: fixed;
     width: 75%;
     display: flex;
     justify-content: space-between;
-    padding: 20px;
+    padding-left:20px ;
+    padding-right: 20px;
     top:0;
     background-color: white;
+    z-index: 100;
 }
 
 #nav-links{
@@ -42,14 +57,14 @@ body{
 }
 
 #sec1{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-self: center;
-    color: white;
     width: 100vw;
-    padding: 70px;
-    height:100vh;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    color: #fff;
+    flex-direction: column;
+    align-items: center;
+    padding: 100px;
 }
 
 .description>.title{
@@ -141,6 +156,65 @@ body{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+}
+
+#links{
+    width:300px;
+    height:350px;
+    
+    margin: 30px;
+    align-items: center;
+    justify-content: center;
+    display: flex; 
+}
+
+#meal{
+    margin: 30px;
+    width: 300px;
+    height:350px;
+    position: relative;
+}
+
+#KetoPlans{
+    background: #fff;
+    position: absolute;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    align-items: center;
+    height: 120px;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+#subscribe{
+    display: flex;
+    color: #fff;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    margin: 30px;
+    background-color:turquoise;
+}
+
+#profileLinks{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+   
+}
+
+#subscribeform{
+    background: #fff;
+    margin: 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+#subscription{
+    display: flex;
+    flex-direction: column;
+
 }
 
 @keyframes onHover{
