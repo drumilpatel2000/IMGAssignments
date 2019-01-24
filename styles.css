@@ -123,8 +123,25 @@ body{
     width: 300px;
     height:350px;
 }
+.profile{
+    margin:30px;
+    width:300px;
+    height:730px;
+    background-color: white;
+}
 
+#profilePic{
+  
+    height:380px;
+    width:300px;
+}
 
+.contents{
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
 
 @keyframes onHover{
     100%{
