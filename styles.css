@@ -127,6 +127,7 @@ body{
 .fa-heart-o{
     color:red;
 }
+
 .posts{
     margin: 30px;
     display: flex;
@@ -244,43 +245,46 @@ body{
     width:100vw;
 }
 
-.imgcontainer{
-    display: flex;
-    margin-top:15px;
-    justify-content: space-between;
-}
-.sec3post{
-    width:350px;
-    height:300px;
-    display: fixed; 
-    background-size:350px 300px;
-    display: flex;
+.sec3Post{
     
-    flex-direction: row;
+background-image:url("assets/assets/apricot-background-berry-1028599.jpg");
+background-size:300px 350px; 
+width: 300px;
+height:350px;
+margin: 0 15px 0 15px
+}
+
+#sec4{
+    background-color: #eee;
+    width:100%;
+    display: flex;
+    color: #217170;
+    flex-direction:column;
     justify-content: center;
-    align-items: center;
-    background-image:url(assets/assets/eiliv-sonas-aceron-789896-unsplash.jpg)
+    align-items:center;
+    padding: 50px;
+}
+#endSubscribe>input[type="submit"]{
+    background-color: #217170;
+    color: #fff;
+    border: 2px solid white;
+    padding: 10px;
+    border-radius: 5px;
 }
 
-.sec3post>div{
-    display: flex;
-    flex-direction: row;
-    overflow: hidden;
-    justify-content: space-around;
-    align-items: center;
-    width: 100%;
-    height: 100%;
+#endSubscribe>input[type="email"]{
+    border: 2px solid #217170;
+    border-radius: 5px;
+    text-align: center;
+    padding: 10px;
 }
 
-.se
-
-.imgcontainer>div>div>i{
-    color: white;
+.imgcontainer{
+    display:flex;
+    margin:15px 0 15px 0;
     
+    justify-content:space-between;
 }
-
-
-
 
 @keyframes onHover{
     100%{
