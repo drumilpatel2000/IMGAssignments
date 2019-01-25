@@ -60,20 +60,25 @@ body{
     width: 100vw;
     height: 100vh;
     display: flex;
-    justify-content: center;
+    justify-content: flex-end;
     color: #fff;
     flex-direction: column;
-    align-items: center;
-    padding: 100px;
+    align-items: flex-start;
+
+}
+
+#sec1>div{
+    margin: 25%;
+
 }
 
 .description>.title{
-    color:#00b359;
+    color:#217170;
     font-family: fantasy;
     font-size: 30px;
 }
 
-#sec1>button{
+#sec1>div>button{
     width: 150px;
 
     color: white;
@@ -84,7 +89,7 @@ body{
     background-color:#ffffff00;
 
 }
-#sec1>button:hover{
+#sec1>div>button:hover{
    
     animation-name:onHover;
     animation-duration: 500ms;
@@ -194,10 +199,10 @@ body{
     align-items: center;
     padding: 20px;
     margin: 30px;
-    background-color:turquoise;
+    background-color:#217170;
 }
 
-#profileLinks{
+#profilelinks{
     width: 100%;
     display: flex;
     justify-content: space-around;
@@ -207,19 +212,79 @@ body{
 #subscribeform{
     background: #fff;
     margin: 30px;
+    padding: 30px;
     display: flex;
+    color: #217170;
+    text-align: center;
+    justify-content: space-between;
     flex-direction: column;
 }
 
-#subscription{
+#subscribeform>input[type="submit"]{
+    background-color: #217170;
+    color: #fff;
+    border: 2px solid white;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+#subscribeform>input[type="email"]{
+    border: 2px solid #217170;
+    border-radius: 5px;
+    text-align: center;
+    padding: 10px;
+}
+
+#sec3{
+    background-color: #fff;
     display: flex;
     flex-direction: column;
-
+    justify-content: center;
+    align-items: center;
+    width:100vw;
 }
+
+.imgcontainer{
+    display: flex;
+    margin-top:15px;
+    justify-content: space-between;
+}
+.sec3post{
+    width:350px;
+    height:300px;
+    display: fixed; 
+    background-size:350px 300px;
+    display: flex;
+    
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-image:url(assets/assets/eiliv-sonas-aceron-789896-unsplash.jpg)
+}
+
+.sec3post>div{
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.se
+
+.imgcontainer>div>div>i{
+    color: white;
+    
+}
+
+
+
 
 @keyframes onHover{
     100%{
         background-color: #fff;
-        color:cyan;
+        color:#217170;
     }
 }
