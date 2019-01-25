@@ -27,14 +27,16 @@ body{
 
 #shopping{
     align-self: flex-end;
+    color: #217170;
 }
 
 #navbar{
     align-self: center;
     position: fixed;
     width: 75%;
+    min-width: 1000px;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     padding-left:20px ;
     padding-right: 20px;
     top:0;
@@ -44,16 +46,19 @@ body{
 
 #nav-links{
 
-    display: flex;
+
     justify-content: space-between;
     list-style: none;
     display: flex;
+    min-width: 800px;
+    width: auto;
 }
 
 
 
 #title{
     margin: 20px;
+    width: auto;
 }
 
 #sec1{
@@ -90,11 +95,11 @@ body{
 
 }
 #sec1>div>button:hover{
-   
+
     animation-name:onHover;
     animation-duration: 500ms;
     animation-fill-mode: forwards;
-    
+
 }
 
 #sec2{
@@ -102,8 +107,8 @@ body{
     width: 100vw;
     display: flex;
     justify-content: center;
-    padding: 50px;
-    
+    padding: 50px 0 50px 0;
+
 }
 
 .content{
@@ -147,12 +152,13 @@ body{
 .profile{
     margin:30px;
     width:300px;
-    height:730px;
+    min-height: 730px;
+
     background-color: white;
 }
 
 #profilePic{
-  
+
     height:380px;
     width:300px;
 }
@@ -167,28 +173,25 @@ body{
 #links{
     width:300px;
     height:350px;
-    
+    background-image: url("assets/assets/alcohol-alcoholic-aromatic-914241.jpg");
+    background-size:300px 350px;
     margin: 30px;
     align-items: center;
     justify-content: center;
-    display: flex; 
+    display: flex;
 }
 
-#meal{
-    margin: 30px;
-    width: 300px;
-    height:350px;
-    position: relative;
-}
+
 
 #KetoPlans{
     background: #fff;
-    position: absolute;
+    position: inherit;
     display: flex;
     justify-content: space-evenly;
     flex-direction: column;
     align-items: center;
-    height: 120px;
+
+    width: 75%;
     padding: 10px;
     border-radius: 5px;
 }
@@ -207,13 +210,13 @@ body{
     width: 100%;
     display: flex;
     justify-content: space-around;
-   
+
 }
 
 #subscribeform{
     background: #fff;
     margin: 30px;
-    padding: 30px;
+    padding: 30px 0;
     display: flex;
     color: #217170;
     text-align: center;
@@ -246,9 +249,9 @@ body{
 }
 
 .sec3Post{
-    
+
 background-image:url("assets/assets/apricot-background-berry-1028599.jpg");
-background-size:300px 350px; 
+background-size:300px 350px;
 width: 300px;
 height:350px;
 margin: 0 15px 0 15px
@@ -262,7 +265,7 @@ margin: 0 15px 0 15px
     flex-direction:column;
     justify-content: center;
     align-items:center;
-    padding: 50px;
+    padding: 50px 0 50px 0;
 }
 #endSubscribe>input[type="submit"]{
     background-color: #217170;
@@ -282,8 +285,18 @@ margin: 0 15px 0 15px
 .imgcontainer{
     display:flex;
     margin:15px 0 15px 0;
-    
+
     justify-content:space-between;
+}
+
+#footer{
+  background-color: #217170;
+  color: white;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  bottom: 0;
+
 }
 
 @keyframes onHover{
