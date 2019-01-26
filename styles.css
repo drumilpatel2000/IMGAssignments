@@ -38,7 +38,7 @@ body{
     width: 75%;
     min-width: 1000px;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     padding-left:20px ;
     padding-right: 20px;
     top:0;
@@ -165,19 +165,19 @@ body{
 }
 .postimage{
     width: 300px;
-    height:350px;
+    height:100%;
 }
 .profile{
     margin:30px;
     width:300px;
-    min-height: 730px;
+    min-height: 850px;
 
     background-color: white;
 }
 
 #profilePic{
 
-    height:380px;
+    height:440px;
     width:300px;
 }
 
@@ -190,9 +190,9 @@ body{
 
 #links{
     width:300px;
-    height:350px;
+    height:410px;
     background-image: url("assets/assets/alcohol-alcoholic-aromatic-914241.jpg");
-    background-size:300px 350px;
+    background-size:300px 410px;
     margin: 30px;
     align-items: center;
     justify-content: center;
