@@ -71,10 +71,11 @@ a{
 
 
 #Title{
-    margin: 20px;
+    
     min-width: 181px;
     width: auto;
-    
+    align-self: center;
+    height:120px;
 }
 
 #sec1{
@@ -166,7 +167,7 @@ a{
 }
 
 .posts{
-    margin: 30px;
+    margin-top: 30px;
     display: flex;
     flex-direction: row;
 }
@@ -337,10 +338,13 @@ margin: 0 15px 0 15px
 }
 
 .imgcontainer{
-    display:flex;
-    margin:15px 0 ;
+    display:grid;
+    width: 100%;
+    margin:15px ;
+    grid-template-columns: 300px 300px 300px 300px 300px;
+    grid-row-gap:20px; 
     
-    justify-content:space-between;
+    justify-content:space-evenly;
 }
 
 #footer{
@@ -372,6 +376,11 @@ margin: 0 15px 0 15px
     }
     .container{
         display: none;
+    }
+
+    .imgcontainer{
+        display: grid;
+        grid-template-columns: repeat(auto-fill,350px);
     }
 
 }
